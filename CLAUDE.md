@@ -37,6 +37,7 @@ Load ONLY the skill doc for the current screen:
 | Screen | Load |
 |--------|------|
 | Combat | `docs/skills/combat.md` |
+| Combat (Defect orb/enemy details) | `docs/skills/defect-mechanics.md` |
 | Map | `docs/skills/pathing.md` |
 | Card reward / shop / card select | `docs/skills/deckbuilding.md` |
 | Need probability math | `docs/skills/probability.md` |

@@ -45,3 +45,7 @@ STS2MCP provides 1-level lookahead (children of each next option). Use it:
 - **Always path through a rest site before the boss** if available and below 80% HP
 - **Treasure nodes are free value** — always prefer paths that include them
 - **Shop routing**: if you have 100+ gold, route through a shop even if it means skipping a monster
+- **Unknown nodes can be fights** — don't assume they're free events at low HP
+- **Silver Crucible tradeoff** — first 3 card rewards upgraded, but first treasure chest is empty. Still worth it (upgrades > 1 relic)
+- **Pre-boss shop**: remove a Strike + buy Focus Potion = massive boss prep
+- **Plating bosses (Lagavulin)**: rest before boss is critical — fight is long, HP buffer matters
