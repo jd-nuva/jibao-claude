@@ -42,6 +42,7 @@ Load ONLY the skill doc for the current screen:
 | Need probability math | `docs/skills/probability.md` |
 | API details | `docs/api-reference.md` |
 | Rest / event / treasure | Reason inline |
+| Modding / setup issues | `docs/skills/modding-setup.md` |
 
 `/play` orchestrates this. `/analyze` for hard decisions.
 
