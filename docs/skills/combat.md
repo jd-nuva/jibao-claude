@@ -44,6 +44,38 @@ Before playing anything, count:
 - If short on energy: cut the least impactful card
 - If you have excess: consider if playing more cards is actually good (some decks want thin turns)
 
+### Energy Economy (Act 2 insight)
+
+The difference between 3 and 7 energy on turn 1 is not "play 4 more cards." It is the difference between "set up one thing" and "deploy the entire engine in a single turn."
+
+With Very Hot Cocoa (+4 energy turn 1), a typical opener is: Hailstorm+(1) + Capacitor(1) + Rainbow+(2) + Claw+(0) + Coolheaded(1) + Defend(1) = all Powers online, orbs full, damage dealt, block up. Without it, you spend 3 turns setting up what Hot Cocoa does in 1.
+
+Implication: **energy-granting relics and effects are worth more than their face value.** Each extra energy on turn 1 doesn't add 1 card — it accelerates the entire engine by 1 turn, which compounds across the whole fight.
+
+## Boss Mechanics Dictate Strategy, Not Your Deck
+
+The same deck plays completely differently depending on the boss:
+
+| Boss | Mechanic | Strategy |
+|------|----------|----------|
+| Lagavulin Matriarch (Act 1) | Asleep + Plating | Slow setup during sleep, sustained damage through Plating decay |
+| The Insatiable (Act 2) | Sandpit death timer | Pure DPS race, skip blocking, Powers only if Turn 1 is free |
+
+Against The Insatiable, the "survive this turn" priority gets overridden by "deal enough damage to not get eaten." Frantic Escape (a StatusCard the boss gives you) becomes a lifeline instead of a curse — it extends the timer. Blocking is nearly worthless because you die to the timer, not to attacks.
+
+Before a boss fight, ask: "What kills me?" If the answer is "a timer" rather than "damage," the entire priority stack inverts.
+
+## Power Deployment Timing
+
+Every turn a Power sits unplayed, you lose its value for that turn. In a 6-turn boss fight:
+
+- Hailstorm+ played turn 1: 6 × 8 = 48 free damage
+- Hailstorm+ played turn 3: 4 × 8 = 32 free damage. **16 damage lost.**
+
+This means the correct play is often: sacrifice defense on turn 1-2 to deploy Powers, then benefit for all remaining turns. Against The Insatiable, we played Capacitor + Feral instead of blocking, took damage, but the engine output on turns 4-6 more than compensated.
+
+Rule: **Play Powers before the fight demands them, not after.** HP spent on early setup is HP invested, not HP wasted.
+
 ## Defect-Specific Combat
 
 For detailed orb mechanics, enemy behaviors, and card combos, see `docs/skills/defect-mechanics.md`.

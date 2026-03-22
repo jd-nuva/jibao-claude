@@ -86,16 +86,23 @@ Gains X Strength at end of each turn. Damage ramps fast. Damp Cultist has Ritual
 
 ## Key Card Combos
 
-### Claw+ + Feral + All for One
+### The Recursive Engine (Claw+ + Feral + All for One + Helix Drill)
 
-The infinite engine:
-1. Play Claw+ (0-cost) → damage + scaling (+3 per play this combat)
-2. Feral returns it to hand (first 0-cost attack each turn)
-3. Play Claw+ again → more damage, goes to discard
-4. Play All for One (2 energy) → returns Claw+ from discard + deals 10 damage
-5. Play Claw+ a third time
+The deck's core is not "Claw does damage." It's a four-layer recursive system where each 0-cost card's value is multiplied 3-4x by the retrieval loop:
 
-4+ Claw+ plays per turn. By turn 5, each Claw+ deals 16+ damage. Scales infinitely.
+```
+Layer 1: Power Cell pulls 0-costs to opening hand (free)
+Layer 2: Play Claw+ (0) → Feral returns it → play again (2 plays, 0 energy)
+Layer 3: All for One (2) → retrieves ALL 0-costs from discard → play them all again
+Layer 4: Helix Drill (0) → 3 dmg per energy spent → play LAST for free burst
+```
+
+Verified output from Act 2 Boss Turn 5 (3 energy):
+- Barrage+ (1) = 35 → All for One (2) = 10, retrieves Claw+ + Helix Drill
+- Claw+ (0) = 16 → Feral returns → Claw+ (0) = 19 → Helix Drill (0) = 9
+- **Total: 89 damage from 3 energy.** Plus 17 from end-of-turn passives = 106.
+
+The implication: **0-cost cards are not "free plays." They are recursive fuel.** Every 0-cost Attack you add to the deck gets played 2-3 times per turn via Feral + All for One. Evaluate 0-cost cards at 3x their face value.
 
 ### Coolheaded + Full Orbs
 
@@ -109,29 +116,39 @@ Coolheaded channels Frost → evokes leftmost orb (if slots full). Use it to:
 Power Cell pulls 2 zero-cost cards from draw pile to hand at combat start. Synergizes with:
 - **Claw+**: immediate damage + scaling
 - **Chill**: channels Frost per enemy (huge in multi-enemy fights)
-- Both in hand turn 1 = 2 free plays before spending energy
+- **Helix Drill**: ready for late-turn burst from the start
+- All three in hand turn 1 = 2-3 free plays before spending energy
 
 ## Orb Slot Scaling (Capacitor)
 
 Capacitor is a **Power card** (+2 Orb Slots), not a relic. Must be drawn and played each combat.
 
-With 5 orb slots (3 base + 2 Capacitor):
-- Barrage/Barrage+ goes from 21 to **35 damage** (7×5 hits)
-- 3 Lightning passives = 9 damage/turn (vs 3 with 1 slot)
-- More room for Dark to grow without being evoked prematurely
-- Rainbow+ still evokes 3 orbs but you keep 2 existing orbs
+Orb slot count is a **multiplier**, not an addition. Everything orb-related scales linearly:
 
-Capacitor is highest-priority play after Hailstorm+ in multi-turn fights.
+| Metric | 3 slots | 5 slots | Change |
+|--------|---------|---------|--------|
+| Barrage+ damage | 21 | **35** | +67% |
+| Lightning passive/turn | 3-6 | 6-9 | ~+100% |
+| Frost passive block/turn | 2-4 | 4-6 | ~+50% |
+| Dark survival (not evoked early) | Low | High | Qualitative |
+
+Capacitor is highest-priority Power after Hailstorm+ in multi-turn fights. In boss fights with 200+ HP, the compounding difference between 3 and 5 orb slots over 6+ turns is 50-100 total damage.
 
 ## Hailstorm+ (AoE Scaling)
 
 "At end of turn, if you have Frost, deal 8 damage to ALL enemies."
 
-- Must have at least 1 Frost orb for it to trigger — never Dualcast your last Frost
-- Deals damage to EACH enemy separately — devastating in multi-enemy fights (3 enemies = 24 total/turn)
-- Synergizes with Coolheaded, Chill, Rainbow+ (all channel Frost)
-- Play it turn 1 against multi-enemy encounters — value compounds every turn
-- Against bosses: 8 free damage/turn for the entire fight
+Hailstorm+ is not "an AoE card." It is a **passive damage engine** that makes AoE a solved problem for the rest of the run:
+
+- 1 enemy (boss): 8 free damage/turn. Over 6 turns = 48.
+- 2 enemies: 16 total/turn. Outpaces most single-target attacks.
+- 3 enemies (Decimillipede): 24 total/turn. Equalizes HP across segments for simultaneous kills.
+
+Critical constraint: must have at least 1 Frost orb channeled. This makes **Dualcasting your last Frost** the single worst misplay possible — it shuts off 8+ free damage per turn. Before any Dualcast, check: "Do I keep at least 1 Frost after this?"
+
+Synergy chain: Coolheaded, Chill, Rainbow+ all channel Frost. The deck naturally maintains Frost presence without dedicating cards to it.
+
+In Act 2, Hailstorm+ was the difference between winning and losing every multi-enemy fight. Without it, the Decimillipede's Reattach mechanic (segments revive if others alive) would have been unbeatable — we had no other way to damage all 3 segments simultaneously.
 
 ## Helix Drill (Late-Turn Burst)
 
