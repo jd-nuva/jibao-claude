@@ -7,6 +7,8 @@ Usage:
     jb play 0 JAW_WORM_0  # 打第0张牌指定目标
     jb end                # 结束回合
     jb potion 0           # 用药水
+    jb potion 0 TARGET    # 用药水指定目标
+    jb toss 0             # 丢弃药水
     jb path 3             # 选路
     jb pick 1             # 拿卡
     jb skip               # 跳过卡牌奖励
@@ -15,6 +17,16 @@ Usage:
     jb rest 0             # 休息点选项
     jb proceed            # 进入地图
     jb claim 1            # 领奖励
+    jb select 5           # 选卡 (card_select 画面)
+    jb confirm            # 确认选择
+    jb cancel             # 取消选择
+    jb chest              # 开宝箱
+    jb openshop           # 打开商店
+    jb relic 0            # 选遗物
+    jb skiprelic          # 跳过遗物
+    jb treasure 0         # 拿宝箱遗物
+    jb hselect 0          # 战斗中选牌
+    jb hconfirm           # 战斗中确认选牌
 """
 
 from __future__ import annotations
@@ -57,6 +69,9 @@ def main() -> None:
                 target = args[1] if len(args) > 1 else None
                 print(json.dumps(driver.use_potion(slot, target), indent=2))
 
+            case "toss":
+                print(json.dumps(driver.discard_potion(int(args[0])), indent=2))
+
             case "path":
                 print(json.dumps(driver.choose_map_node(int(args[0])), indent=2))
 
@@ -80,6 +95,36 @@ def main() -> None:
 
             case "claim":
                 print(json.dumps(driver.claim_reward(int(args[0])), indent=2))
+
+            case "select":
+                print(json.dumps(driver.select_card(int(args[0])), indent=2))
+
+            case "confirm":
+                print(json.dumps(driver.confirm_selection(), indent=2))
+
+            case "cancel":
+                print(json.dumps(driver.cancel_selection(), indent=2))
+
+            case "chest":
+                print(json.dumps(driver.open_chest(), indent=2))
+
+            case "openshop":
+                print(json.dumps(driver.open_shop(), indent=2))
+
+            case "relic":
+                print(json.dumps(driver.select_relic(int(args[0])), indent=2))
+
+            case "skiprelic":
+                print(json.dumps(driver.skip_relic_selection(), indent=2))
+
+            case "treasure":
+                print(json.dumps(driver.claim_treasure_relic(int(args[0])), indent=2))
+
+            case "hselect":
+                print(json.dumps(driver.combat_select_card(int(args[0])), indent=2))
+
+            case "hconfirm":
+                print(json.dumps(driver.combat_confirm_selection(), indent=2))
 
             case _:
                 print(f"Unknown command: {cmd}")
