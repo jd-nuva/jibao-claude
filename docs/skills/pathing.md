@@ -43,6 +43,30 @@ STS2MCP provides 1-level lookahead (children of each next option). Use it:
 - If a node leads to an elite, plan whether you'll be ready
 - Avoid paths that bottleneck into an elite when at low HP
 
+## Act 2 Validated Route (Right Column)
+
+Our actual Act 2 path and what it taught:
+
+```
+Ancient → Monster → Shop → Monster → Monster → Elite → Shop → Rest →
+Treasure → Rest → Unknown → Rest → Elite → Unknown → Rest → Boss
+```
+
+Key stats: 4 Rest Sites, 2 Shops, 2 Elites, 1 Treasure, 2 Unknowns, 3 Monsters.
+
+Lessons:
+- **Double elite is viable** if the path has enough Rest Sites between/after them. We dropped to 16 HP and 38 HP after elites but recovered both times.
+- **Shop timing matters more than shop contents.** First shop (Floor 20): removed Strike. Second shop (Floor 24): bought Capacitor. Card removal early, card addition later.
+- **Rest vs Smith**: at <65% HP, rest. We rested 4 times and smithed 0. In hindsight, one Smith at 65% HP for Coolheaded+ (draw 2) would have been worth the risk.
+
+## Event Decisions (Act 2 learnings)
+
+| Event | Choice | Outcome | Lesson |
+|-------|--------|---------|--------|
+| Tezcatara (Ancient) | Very Hot Cocoa | +4 energy turn 1, full heal | Best possible Act 2 opener. Cocoa is transformative. |
+| Slippery Bridge | Re-roll 3x (12 HP), remove Defend | Deck thinned | Worth paying HP to re-roll until a starter card shows. 12 HP = cheap card removal. |
+| This or That? | Clumsy curse + random relic | Got Unsettling Lamp | Ethereal curses are nearly free — auto-exhaust after 1 turn. Take the relic. |
+
 ## General Rules
 
 - **Never path into an elite below 50% HP** unless you're certain your deck can win taking <10 damage
@@ -53,3 +77,4 @@ STS2MCP provides 1-level lookahead (children of each next option). Use it:
 - **Silver Crucible tradeoff** — first 3 card rewards upgraded, but first treasure chest is empty. Still worth it (upgrades > 1 relic)
 - **Pre-boss shop**: remove a Strike + buy Focus Potion = massive boss prep
 - **Plating bosses (Lagavulin)**: rest before boss is critical — fight is long, HP buffer matters
+- **HP is a resource, not a score.** Taking 12 damage at Slippery Bridge to remove a Defend was correct. Taking 14 damage from skipping block to play Feral against The Insatiable was correct. Spending HP now to improve all future turns is an investment.

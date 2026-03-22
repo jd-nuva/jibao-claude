@@ -76,16 +76,28 @@ Proven build through Act 1 + Act 2. Core pieces:
 - **Unsettling Lamp**: first debuff card doubled — use with Vulnerable-applying cards
 
 ### Card Evaluation for This Archetype
-- **0-cost attacks**: very high priority (Feral + All for One + Power Cell synergy)
-- **Frost channelers**: high priority (defense scales with Focus)
-- **Powers**: play during boss sleep turns or buff turns
-- **Strike/Defend**: remove Strikes first, Defends are worse with Dex debuffs
+- **0-cost attacks**: very high priority — not because they're "free," but because the recursive engine (Feral + All for One + Power Cell) multiplies each 0-cost card's value by 3-4x. Evaluate at 3x face value.
+- **Powers (Hailstorm+, Capacitor, Feral)**: highest priority in Act 2+. Each Power played turn 1 compounds value across the entire fight. Hailstorm+ alone = 48+ free damage in a 6-turn boss fight.
+- **Frost channelers**: high priority. They serve double duty — defense via Frost passive AND enabling Hailstorm+ trigger. Losing all Frost orbs = losing 8 free AoE damage per turn.
+- **Strike/Defend**: remove Strikes first, then Defends. Every starter card removed is a turn where you draw an engine piece instead.
 
 ### Shop Priority (Defect Orb Build)
 1. Card removal (Strikes first)
 2. Focus Potion (if approaching elite/boss)
 3. Feral / key engine pieces
 4. Frost/Lightning channelers
+
+## Deck Evolution by Act
+
+The deck's needs change as the run progresses:
+
+| Act | Priority | Why |
+|-----|----------|-----|
+| Act 1 | Damage + engine pieces (Claw+, Feral) | Need to kill things before they kill you |
+| Act 2 | AoE (Hailstorm+) + orb scaling (Capacitor) + removal | Multi-enemy fights punish single-target decks. Deck thinning improves consistency. |
+| Act 3+ | Probably just removal + key upgrades | Deck should be complete. Every card added dilutes draw probability. |
+
+Act 2 taught us: the transition from "build the engine" to "optimize the engine" happens mid-Act 2. After getting Hailstorm+ and Capacitor, every subsequent card reward was either skipped or marginal. The deck's power came from consistency (thin deck, reliable draws), not from adding more cards.
 
 ## Skip Heuristics
 
@@ -94,3 +106,4 @@ Skip the card reward when:
 - All 3 cards are mediocre / don't synergize
 - You're in Act 3+ and your deck is tuned — adding cards dilutes draw probability
 - You'd rather the gold from the fight than any card offered
+- Your engine is complete and more cards = more turns before you see key pieces (Feral, All for One, Barrage+)
