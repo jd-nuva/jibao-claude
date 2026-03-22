@@ -6,10 +6,15 @@ Direct HTTP, no MCP overhead.
 
 from __future__ import annotations
 
+import subprocess
+from pathlib import Path
+
 import httpx
 
 DEFAULT_URL = "http://localhost:15526"
 API_PATH = "/api/v1/singleplayer"
+
+ORBS_FULL_SOUND = Path(__file__).parent.parent.parent / "assets" / "audio" / "blitz_final.mp3"
 
 
 class GameDriver:
@@ -18,6 +23,7 @@ class GameDriver:
     def __init__(self, base_url: str = DEFAULT_URL) -> None:
         self.base_url = base_url
         self._http = httpx.Client(base_url=base_url, timeout=10)
+        self._orbs_were_full = False
 
     # -- Read state --
 
@@ -25,7 +31,23 @@ class GameDriver:
         """Get current game state. fmt='json' returns dict, 'markdown' returns str."""
         r = self._http.get(API_PATH, params={"format": fmt})
         r.raise_for_status()
-        return r.json() if fmt == "json" else r.text
+        result = r.json() if fmt == "json" else r.text
+        if isinstance(result, dict):
+            self._check_orbs_full(result)
+        return result
+
+    def _check_orbs_full(self, data: dict) -> None:
+        """Play sound when orb slots go from not-full to full."""
+        orb_slots = data.get("orb_slots", 0)
+        orb_empty = data.get("orb_empty_slots", orb_slots)
+        is_full = orb_slots > 0 and orb_empty == 0
+        if is_full and not self._orbs_were_full and ORBS_FULL_SOUND.exists():
+            subprocess.Popen(
+                ["afplay", str(ORBS_FULL_SOUND)],
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+            )
+        self._orbs_were_full = is_full
 
     # -- Execute actions --
 
