@@ -56,6 +56,47 @@ Key quick rules:
 - **Boss Plating resets each turn** — attack during YOUR turn when Boss has 0 Block
 - **Focus Potion on turn 1 of elites/bosses** — compounds value over entire fight
 
+## Act 2 Elite/Boss Patterns
+
+### Thieving Hopper
+- Attacks + steals a card via **Swipe**. "Returned on kill" is unreliable — may lose the card permanently
+- Has **Flutter** after buffing: 50% less Attack damage, need 5 attack hits to Stun
+- Kill fast before **Escape Artist** timer runs out (steals gold and flees)
+- Multi-hit attacks (Barrage) count multiple hits toward Stun threshold
+
+### Bowlbug (Rock)
+- **Imbalanced**: if you fully block its attack, it becomes **Stunned** next turn
+- Prioritize exact block math: Defend + Frost passives can precisely hit the threshold
+- Free offense turn after Stun — go all-in damage
+
+### Decimillipede (3 segments)
+- **Reattach**: killed segments revive in 2 turns if ANY other segment is alive
+- Must kill all segments within 2 turns of each other — Hailstorm+ equalizes HP across segments
+- Segments rotate intents (Attack, Buff, Debuff) — they get Strength over time
+- AoE is king: Hailstorm+ (8/turn to all) does the heavy lifting
+
+### Infested Prism (Elite, 200 HP)
+- **Vital Spark**: first Attack damage per turn grants +1 Energy (only triggers on HP damage, NOT blocked damage)
+- Alternates Attack and Buff/Defend turns — use Buff turns for Powers and setup
+- High HP pool requires sustained engine damage — Dark orb + Barrage are key
+- Opens with 22 damage, escalates with Strength
+
+### The Insatiable (Act 2 Boss, 321 HP)
+- **Sandpit**: death timer (eaten alive). Starts around 4 turns, ticks down each round
+- **Frantic Escape** status cards: playing them EXTENDS the timer (+1 Sandpit). Costs energy though
+- Turn 1 is always Buff + StatusCard (no attack) — go full setup: all Powers + Vulnerable Potion
+- StatusCards (6 per cast) massively clog the deck — draw/thin is critical
+- DPS race: need ~75 damage/turn. Barrage (5 orbs = 35) + Claw engine + Hailstorm + passives
+- Use Frantic Escape strategically if timer gets to 2 or less
+
+## Potion Timing (Act 2 additions)
+
+| Potion | When to Use |
+|--------|------------|
+| Vulnerable Potion | Boss/elite turn 1. +50% Attack damage for 3 turns. Use BEFORE attacks. |
+| Dexterity Potion | Long fights (elite/boss). Compounds block value over many turns. |
+| Skill Potion | Energy-starved turns or when you need emergency block. Can find TURBO for +2 energy. |
+
 ## Common Mistakes
 
 - Blocking when enemies are buffing (pure waste)
@@ -66,3 +107,6 @@ Key quick rules:
 - Playing wrong card due to index shift (re-read state or play right-to-left)
 - Waking sleeping bosses accidentally with passive orb damage through Block
 - Using Dualcast expecting same-orb double evoke (it's 2 different orbs)
+- **Dualcasting away your last Frost** — kills Hailstorm+ trigger, loses passive block
+- **Not playing Frantic Escape** against The Insatiable when timer is low — it's not a waste card, it's a lifeline
+- **Chaining `jb play` commands without re-reading state** — index shifts cause wrong-card plays constantly

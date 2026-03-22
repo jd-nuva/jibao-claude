@@ -51,22 +51,29 @@ Priority order for spending gold:
 
 ## Defect Archetype: Orb Engine + Claw
 
-Proven build from Act 1 clear. Core pieces:
+Proven build through Act 1 + Act 2. Core pieces:
 
 | Role | Cards | Priority |
 |------|-------|----------|
 | Engine | Claw+ (0-cost scaling) + Feral (return to hand) | Must-have |
 | Burst | All for One (returns all 0-cost from discard) | High |
 | Orb setup | Rainbow+, Lightning Rod+, Coolheaded, Zap | Core |
+| Orb scaling | Capacitor (+2 orb slots, Power card) | High — Barrage 21→35 |
+| AoE | Hailstorm+ (8 to ALL enemies/turn if Frost) | Critical for Act 2+ |
 | AoE defense | Chill (0-cost, Frost per enemy, exhausts) | High in multi-enemy |
 | Damage | Barrage / Barrage+ (scales with orb count) | Core |
+| Late burst | Helix Drill (0-cost, 3 dmg per energy spent) | Good engine piece |
 | Draw | Skim (draw 3), Coolheaded (Frost + draw 1) | Medium |
 | Scaling | Focus Potion (save for elites/boss) | Critical |
 
 ### Relic Synergies
-- **Power Cell**: pulls 0-cost cards (Claw+, Chill) to hand at combat start
+- **Power Cell**: pulls 0-cost cards (Claw+, Chill, Helix Drill) to hand at combat start
+- **Very Hot Cocoa**: +4 energy turn 1 — deploy entire engine immediately
 - **Oddly Smooth Stone**: +1 Dex at start — passive defense
 - **Cracked Core**: free Lightning orb turn 1
+- **Gorget**: +4 Plating — free block that decays, acts as buffer for first few turns
+- **Permafrost**: first Power played each combat = +6 Block — play Capacitor/Hailstorm+ early
+- **Unsettling Lamp**: first debuff card doubled — use with Vulnerable-applying cards
 
 ### Card Evaluation for This Archetype
 - **0-cost attacks**: very high priority (Feral + All for One + Power Cell synergy)
