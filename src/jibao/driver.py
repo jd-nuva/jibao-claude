@@ -81,5 +81,38 @@ class GameDriver:
     def confirm_selection(self) -> dict:
         return self.act("confirm_selection")
 
+    def cancel_selection(self) -> dict:
+        return self.act("cancel_selection")
+
+    def discard_potion(self, slot: int) -> dict:
+        return self.act("discard_potion", slot=slot)
+
+    def open_chest(self) -> dict:
+        return self.act("open_chest")
+
+    def open_shop(self) -> dict:
+        return self.act("open_shop")
+
+    def open_map(self) -> dict:
+        return self.act("open_map")
+
+    def combat_select_card(self, card_index: int) -> dict:
+        return self.act("combat_select_card", card_index=card_index)
+
+    def combat_confirm_selection(self) -> dict:
+        return self.act("combat_confirm_selection")
+
+    def select_relic(self, index: int) -> dict:
+        return self.act("select_relic", index=index)
+
+    def skip_relic_selection(self) -> dict:
+        return self.act("skip_relic_selection")
+
+    def claim_treasure_relic(self, index: int) -> dict:
+        return self.act("claim_treasure_relic", index=index)
+
+    def advance_dialogue(self) -> dict:
+        return self.act("advance_dialogue")
+
     def close(self) -> None:
         self._http.close()
