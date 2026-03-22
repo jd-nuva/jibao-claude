@@ -111,6 +111,37 @@ Power Cell pulls 2 zero-cost cards from draw pile to hand at combat start. Syner
 - **Chill**: channels Frost per enemy (huge in multi-enemy fights)
 - Both in hand turn 1 = 2 free plays before spending energy
 
+## Orb Slot Scaling (Capacitor)
+
+Capacitor is a **Power card** (+2 Orb Slots), not a relic. Must be drawn and played each combat.
+
+With 5 orb slots (3 base + 2 Capacitor):
+- Barrage/Barrage+ goes from 21 to **35 damage** (7×5 hits)
+- 3 Lightning passives = 9 damage/turn (vs 3 with 1 slot)
+- More room for Dark to grow without being evoked prematurely
+- Rainbow+ still evokes 3 orbs but you keep 2 existing orbs
+
+Capacitor is highest-priority play after Hailstorm+ in multi-turn fights.
+
+## Hailstorm+ (AoE Scaling)
+
+"At end of turn, if you have Frost, deal 8 damage to ALL enemies."
+
+- Must have at least 1 Frost orb for it to trigger — never Dualcast your last Frost
+- Deals damage to EACH enemy separately — devastating in multi-enemy fights (3 enemies = 24 total/turn)
+- Synergizes with Coolheaded, Chill, Rainbow+ (all channel Frost)
+- Play it turn 1 against multi-enemy encounters — value compounds every turn
+- Against bosses: 8 free damage/turn for the entire fight
+
+## Helix Drill (Late-Turn Burst)
+
+"Deal 3 damage for each Energy previously spent this turn." 0-cost.
+
+- Play LAST in your turn after spending all energy for maximum damage
+- With 3 energy spent: 9 damage (free). With 7 energy (Hot Cocoa turn 1): 21 damage
+- Works with All for One (0-cost retrieval), Feral (0-cost return)
+- Does NOT count its own play as "spent" — only energy spent before it
+
 ## Potion Timing
 
 | Potion | When to Use |
@@ -118,6 +149,14 @@ Power Cell pulls 2 zero-cost cards from draw pile to hand at combat start. Syner
 | Focus Potion | Elite/Boss turn 1. Compounds value over entire fight. |
 | Flex Potion | Lethal turn only. +5 Str wears off at end of turn. Perfect for finishing enemies. |
 | Fruit Juice | Use from map immediately. Permanent +5 HP. |
+| Vulnerable Potion | Boss/elite turn 1. +50% Attack dmg for 3 turns. Potions don't trigger Unsettling Lamp. |
+| Dexterity Potion | Long elite/boss fights. +2 Dex compounds on every block card. |
+
+## Dexterity Interactions
+
+- Dex boosts block from CARDS that say "Gain X Block" (Defend, Lightning Rod+)
+- Dex does **NOT** boost Frost passive block or Frost evoke block (orb effects are not cards)
+- Dex does **NOT** boost Plating block (it's a power effect, not a card)
 
 ## Index Management
 

@@ -25,6 +25,10 @@
 - Multi-enemy fights are dangerous without AoE — avoid elites if deck is weak
 - Shop for removal and key pickups
 - Rest sites more valuable (fights hit harder)
+- **Early shop path**: route through a shop in the first 3 floors to remove a Strike early
+- **Elites are worth it at 70%+ HP**: relics compound — we beat 2 Act 2 elites and the relics (Unsettling Lamp, Lucky Fysh, Permafrost) carried through the boss
+- **Rest-heavy right side**: the right column often chains Rest → Treasure → Rest — great for post-elite recovery
+- **Tezcatara (Ancient)**: full heal + powerful relic choice. Very Hot Cocoa (+4 energy turn 1) is transformative
 
 ### Act 3+
 - **Goal**: deck is nearly complete, survive to boss
