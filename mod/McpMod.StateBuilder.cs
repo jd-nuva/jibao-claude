@@ -1052,7 +1052,7 @@ public static partial class McpMod
         if (!canConfirm)
         {
             var allConfirms = FindAll<NConfirmButton>(screen);
-            canConfirm = allConfirms.Any(b => b.IsEnabled && b.Visible);
+            canConfirm = allConfirms.Any(b => b.IsEnabled && b.IsVisibleInTree());
         }
         state["can_confirm"] = canConfirm;
 
