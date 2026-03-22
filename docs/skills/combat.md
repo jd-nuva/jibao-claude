@@ -44,6 +44,18 @@ Before playing anything, count:
 - If short on energy: cut the least impactful card
 - If you have excess: consider if playing more cards is actually good (some decks want thin turns)
 
+## Defect-Specific Combat
+
+For detailed orb mechanics, enemy behaviors, and card combos, see `docs/skills/defect-mechanics.md`.
+
+Key quick rules:
+- **Channeling into full orb slots evokes the leftmost orb** — plan orb order accordingly
+- **Dark orb grows each turn** — let it cook during setup turns, evoke later for burst
+- **Multi-hit attacks (Barrage) resolve all hits before Skittish triggers** — hard counter
+- **Dualcast evokes rightmost, then NEW rightmost** — chains through 2 orbs
+- **Boss Plating resets each turn** — attack during YOUR turn when Boss has 0 Block
+- **Focus Potion on turn 1 of elites/bosses** — compounds value over entire fight
+
 ## Common Mistakes
 
 - Blocking when enemies are buffing (pure waste)
@@ -51,3 +63,6 @@ Before playing anything, count:
 - Using potions on easy fights (save for elites/bosses)
 - Not checking if you can lethal before committing to a defensive turn
 - Exhausting cards you'll need later in long fights
+- Playing wrong card due to index shift (re-read state or play right-to-left)
+- Waking sleeping bosses accidentally with passive orb damage through Block
+- Using Dualcast expecting same-orb double evoke (it's 2 different orbs)

@@ -49,6 +49,37 @@ Priority order for spending gold:
 4. **Potions** (only if slots available and approaching a hard fight)
 5. **Random colorless cards** (usually skip)
 
+## Defect Archetype: Orb Engine + Claw
+
+Proven build from Act 1 clear. Core pieces:
+
+| Role | Cards | Priority |
+|------|-------|----------|
+| Engine | Claw+ (0-cost scaling) + Feral (return to hand) | Must-have |
+| Burst | All for One (returns all 0-cost from discard) | High |
+| Orb setup | Rainbow+, Lightning Rod+, Coolheaded, Zap | Core |
+| AoE defense | Chill (0-cost, Frost per enemy, exhausts) | High in multi-enemy |
+| Damage | Barrage / Barrage+ (scales with orb count) | Core |
+| Draw | Skim (draw 3), Coolheaded (Frost + draw 1) | Medium |
+| Scaling | Focus Potion (save for elites/boss) | Critical |
+
+### Relic Synergies
+- **Power Cell**: pulls 0-cost cards (Claw+, Chill) to hand at combat start
+- **Oddly Smooth Stone**: +1 Dex at start — passive defense
+- **Cracked Core**: free Lightning orb turn 1
+
+### Card Evaluation for This Archetype
+- **0-cost attacks**: very high priority (Feral + All for One + Power Cell synergy)
+- **Frost channelers**: high priority (defense scales with Focus)
+- **Powers**: play during boss sleep turns or buff turns
+- **Strike/Defend**: remove Strikes first, Defends are worse with Dex debuffs
+
+### Shop Priority (Defect Orb Build)
+1. Card removal (Strikes first)
+2. Focus Potion (if approaching elite/boss)
+3. Feral / key engine pieces
+4. Frost/Lightning channelers
+
 ## Skip Heuristics
 
 Skip the card reward when:
