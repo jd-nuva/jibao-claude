@@ -1,0 +1,47 @@
+# Map Pathing Strategy
+
+## Node Types and When to Take Them
+
+| Node | Risk | Reward | Take When |
+|------|------|--------|-----------|
+| Monster | Low | Card reward + gold | Default path filler |
+| Elite | High | Relic + card + gold | HP >70%, deck can handle it |
+| Rest Site | None | Heal or upgrade | Before boss, or at <50% HP |
+| Shop | None | Buy/remove | Have 75+ gold |
+| Unknown/? | Variable | Random event | Medium HP, not urgent needs |
+| Treasure | None | Free relic | Always good |
+| Boss | Very high | Boss relic + next act | End of act (mandatory) |
+
+## Pathing Priorities by Act
+
+### Act 1
+- **Goal**: build a functioning deck that can beat the Act 1 boss
+- Take 1-2 elites if HP allows (early relics compound value)
+- Hit a shop to remove a Strike
+- Rest site before boss
+
+### Act 2
+- **Goal**: AoE coverage, begin scaling, prepare for harder fights
+- Multi-enemy fights are dangerous without AoE — avoid elites if deck is weak
+- Shop for removal and key pickups
+- Rest sites more valuable (fights hit harder)
+
+### Act 3+
+- **Goal**: deck is nearly complete, survive to boss
+- Avoid unnecessary fights that risk HP for cards you don't need
+- Prioritize rest sites and shops
+- Only take elites if confident and the relic would help the boss fight
+
+## Lookahead
+
+STS2MCP provides 1-level lookahead (children of each next option). Use it:
+- If a node leads to a rest site, it's safer (you can heal after)
+- If a node leads to an elite, plan whether you'll be ready
+- Avoid paths that bottleneck into an elite when at low HP
+
+## General Rules
+
+- **Never path into an elite below 50% HP** unless you're certain your deck can win taking <10 damage
+- **Always path through a rest site before the boss** if available and below 80% HP
+- **Treasure nodes are free value** — always prefer paths that include them
+- **Shop routing**: if you have 100+ gold, route through a shop even if it means skipping a monster

@@ -1,0 +1,15 @@
+{
+  "name": "jibao-claude",
+  "version": "0.1.0",
+  "private": true,
+  "description": "鸡煲claude — future dashboard and visualization",
+  "type": "module",
+  "devDependencies": {
+    "typescript": "^5.7",
+    "@types/node": "^22"
+  },
+  "packageManager": "pnpm@10.29.2",
+  "engines": {
+    "node": ">=22"
+  }
+}
