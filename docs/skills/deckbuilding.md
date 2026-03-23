@@ -1,8 +1,15 @@
 # Deckbuilding Strategy
 
-## Core Principle: Deck Quality > Deck Size
+## Core Principle: Adapt to What You're Given (铁律)
 
-A 15-card deck that draws its key cards every turn beats a 30-card deck with individually strong cards. Skip card rewards more often than you take them.
+The Defect has many viable archetypes — Lightning burst, Frost turtle, Dark scaling, Claw engine, Focus stacking, 0-cost spam, Power spam, and hybrids. **Don't precommit to an archetype.** Let the cards and relics you find guide you.
+
+Decision flow at each card reward:
+1. Look at what you already have — what's your deck doing well? What's it missing?
+2. Pick the card that fills the biggest gap (block? damage? AoE? draw? scaling?)
+3. If nothing fills a gap, skip. Deck quality > deck size
+
+A 15-card deck that draws its key cards every turn beats a 30-card deck with individually strong cards.
 
 ## Card Evaluation Framework
 
@@ -12,15 +19,17 @@ When offered a card reward, score each card on:
    - No AoE → AoE card is high priority
    - No scaling → Strength/power cards are high priority
    - No draw → card draw is high priority
+   - Not enough block → block/Frost cards are high priority
    - Starter cards still in deck → removal > addition
 
-2. **Does it fit the deck archetype?**
-   - Strength-scaling deck wants multi-hit attacks, not block
-   - Block-heavy deck wants Dexterity and Barricade-style effects
-   - Don't add cards that don't synergize just because they're "good"
+2. **Does it synergize with what I already have?**
+   - Have lots of orbs → Barrage, Dualcast, Multi-Cast become great
+   - Have Razor Tooth → 0-cost cards get extra value
+   - Have Focus → Frost/Lightning passives scale harder
+   - But don't force synergy that doesn't exist yet — a card must be good NOW or have clear future payoff
 
 3. **What act are we in?**
-   - Act 1: front-loaded damage, kill hallway fights fast
+   - Act 1: front-loaded damage, kill hallway fights fast. Also need BLOCK for boss (3 enemies possible)
    - Act 2: AoE mandatory (multi-enemy fights), some scaling
    - Act 3+: scaling and engine required, raw damage falls off
 
@@ -49,9 +58,13 @@ Priority order for spending gold:
 4. **Potions** (only if slots available and approaching a hard fight)
 5. **Random colorless cards** (usually skip)
 
-## Defect Archetype: Razor Tooth Lightning (proven Act 1)
+## Reference Archetypes (examples, not blueprints)
 
-Alternative to Orb+Claw. Works when Razor Tooth is available from Ancient.
+These are builds we've actually run. Use them as pattern recognition — "I have Razor Tooth, what worked with that before?" — not as checklists to force.
+
+### Razor Tooth Lightning (Run 2, died Act 1 Boss)
+
+Emerged from: Razor Tooth + Pocketwatch from Ancient choices.
 
 | Role | Cards | Notes |
 |------|-------|-------|
@@ -63,11 +76,11 @@ Alternative to Orb+Claw. Works when Razor Tooth is available from Ancient.
 | Orb AoE | Barrage (5 per orb → 7 per orb upgraded) | With 3 orbs + Flex = 30+ damage |
 | Block + energy | Charge Battery (7 block → 10 upgraded + 1E next turn) | Sustains 4E turns |
 
-**Key weakness**: not enough block cards for multi-enemy fights. Need 4+ Defend-type cards for boss with minions.
+**Why it died**: not enough block for 3-enemy boss. Need 4+ block cards or Frost orbs for sustained defense. Offense-only loses to multi-enemy scaling.
 
-## Defect Archetype: Orb Engine + Claw
+### Orb Engine + Claw (Run 1, reached Act 3)
 
-Proven build through Act 1 + Act 2. Core pieces:
+Emerged from: Claw + Feral early, then orb support cards appeared.
 
 | Role | Cards | Priority |
 |------|-------|----------|
@@ -102,6 +115,20 @@ Proven build through Act 1 + Act 2. Core pieces:
 2. Focus Potion (if approaching elite/boss)
 3. Feral / key engine pieces
 4. Frost/Lightning channelers
+
+## Every Deck Needs These (archetype-agnostic)
+
+Regardless of build, your deck MUST have answers for:
+
+| Need | Why | Cards that solve it |
+|------|-----|-------------------|
+| **Block for 20+/turn** | Bosses and late elites hit this hard | Frost orbs, Defend+, Charge Battery, Glacier, Prolong |
+| **Multi-enemy damage** | Act 2+ has many multi-enemy fights | Barrage, Sweeping Beam, Hailstorm, Lightning passive |
+| **Burst single-target** | Kill scaling enemies before they ramp | Dualcast, Ball Lightning, Barrage (3 orbs = 15-21) |
+| **Card draw** | Drawing your key cards wins fights | FTL, Skim, Coolheaded, card draw relics |
+| **Scaling** | Fights that last 5+ turns need scaling | Focus (orbs scale), Claw (+2-3/play), Powers |
+
+If your deck is missing any row, prioritize filling that gap at the next card reward or shop. Don't just pick "the best card" — pick the card that patches your weakest dimension.
 
 ## Skip Heuristics
 

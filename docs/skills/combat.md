@@ -1,12 +1,27 @@
 # Combat Strategy
 
+## The Scaling Clock (铁律)
+
+Most elites and bosses gain Strength every turn. The fight gets harder the longer it goes:
+
+| Enemy | Scaling | Implication |
+|-------|---------|-------------|
+| Byrdonis | +1 Str/turn (Territorial) | 16 → 20 → 24... by turn 5 |
+| Bygone Effigy | +10 Str on buff turn | From 0 to 25 damage in one turn |
+| Kin Priest Followers | +2 Str per buff turn | Minion damage doubles over 3-4 turns |
+| Slimed Berserker | +3 Str/turn | Hits 33 by turn 4 |
+| Devoted Sculptor | +9 Str/turn (Ritual 9) | Hits 40+ by turn 3 |
+
+**Every turn you DON'T kill them, the block requirement goes up.** Playing defensively against scaling enemies is a losing strategy — you fall behind the curve. Balance offense and defense, but lean offense. When in doubt, kill faster.
+
 ## Decision Priority (never violate this order)
 
 1. **Survive this turn** — if incoming damage > current HP + achievable block, use potions or kill the threat
 2. **Lethal check** — can we kill an enemy? Especially elites/bosses. Killing = 0 future damage from that enemy
 3. **Minimize damage taken** — block efficiently, kill highest-damage enemy first
-4. **Maximize scaling** — play Strength/Dexterity powers, apply Vulnerable/Weak
-5. **Don't waste** — don't over-block, don't exhaust key cards, don't use potions unnecessarily
+4. **Race the clock** — scaling enemies punish slow play. Don't turtle when you should be dealing damage
+5. **Maximize scaling** — play Strength/Dexterity powers, apply Vulnerable/Weak
+6. **Don't waste** — don't over-block, don't exhaust key cards, don't use potions unnecessarily
 
 ## Card Play Sequencing
 
