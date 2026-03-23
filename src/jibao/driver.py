@@ -38,8 +38,9 @@ class GameDriver:
 
     def _check_orbs_full(self, data: dict) -> None:
         """Play sound when orb slots go from not-full to full."""
-        orb_slots = data.get("orb_slots", 0)
-        orb_empty = data.get("orb_empty_slots", orb_slots)
+        player = data.get("battle", {}).get("player", {})
+        orb_slots = player.get("orb_slots", 0)
+        orb_empty = player.get("orb_empty_slots", orb_slots)
         is_full = orb_slots > 0 and orb_empty == 0
         if is_full and not self._orbs_were_full and ORBS_FULL_SOUND.exists():
             subprocess.Popen(
@@ -63,6 +64,20 @@ class GameDriver:
         if target:
             kw["target"] = target
         return self.act("play_card", **kw)
+
+    def play_card_by_name(self, card_name: str, target: str | None = None) -> dict:
+        """Play a card by name instead of index. Avoids index-shift bugs.
+
+        Reads current state, finds the card by name, and plays it.
+        Raises ValueError if the card is not in hand.
+        """
+        data = self.state(fmt="json")
+        hand = data.get("battle", {}).get("player", {}).get("hand", [])
+        for card in hand:
+            if card["name"].lower() == card_name.lower():
+                return self.play_card(card["index"], target)
+        names = [c["name"] for c in hand]
+        raise ValueError(f"Card '{card_name}' not in hand. Hand: {names}")
 
     def end_turn(self) -> dict:
         return self.act("end_turn")

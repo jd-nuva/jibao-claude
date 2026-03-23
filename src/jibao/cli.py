@@ -57,9 +57,16 @@ def main() -> None:
                     print(result)
 
             case "play":
-                idx = int(args[0])
-                target = args[1] if len(args) > 1 else None
-                print(json.dumps(driver.play_card(idx, target), indent=2))
+                # Support both index and name: `jb play 2` or `jb play Claw+`
+                try:
+                    idx = int(args[0])
+                    target = args[1] if len(args) > 1 else None
+                    print(json.dumps(driver.play_card(idx, target), indent=2))
+                except ValueError:
+                    # args[0] is a card name, not an index
+                    card_name = args[0]
+                    target = args[1] if len(args) > 1 else None
+                    print(json.dumps(driver.play_card_by_name(card_name, target), indent=2))
 
             case "end":
                 print(json.dumps(driver.end_turn(), indent=2))
