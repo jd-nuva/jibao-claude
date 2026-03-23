@@ -49,6 +49,22 @@ Priority order for spending gold:
 4. **Potions** (only if slots available and approaching a hard fight)
 5. **Random colorless cards** (usually skip)
 
+## Defect Archetype: Razor Tooth Lightning (proven Act 1)
+
+Alternative to Orb+Claw. Works when Razor Tooth is available from Ancient.
+
+| Role | Cards | Notes |
+|------|-------|-------|
+| Core relic | Razor Tooth (auto-upgrade all cards in combat) | Every Strike becomes Strike+, every Defend becomes Defend+ |
+| Draw engine | Pocketwatch (<=3 cards = +3 draw) | Play 3 upgraded cards/turn, draw 7 next turn |
+| 0-cost damage | FTL (5 dmg + draw), Claw (scales) | Free plays that don't break Pocketwatch |
+| Orb burst | Dualcast+ (0 cost with Razor Tooth) | 16 evoke damage for free |
+| Orb scaling | Ball Lightning (7+2 Sharp = 9 base → 12 upgraded) | Channels + deals targeted damage |
+| Orb AoE | Barrage (5 per orb → 7 per orb upgraded) | With 3 orbs + Flex = 30+ damage |
+| Block + energy | Charge Battery (7 block → 10 upgraded + 1E next turn) | Sustains 4E turns |
+
+**Key weakness**: not enough block cards for multi-enemy fights. Need 4+ Defend-type cards for boss with minions.
+
 ## Defect Archetype: Orb Engine + Claw
 
 Proven build through Act 1 + Act 2. Core pieces:
